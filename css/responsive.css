@@ -10,6 +10,12 @@
   .s-hero .text {
     max-width: 49%;
   }
+  .s-card-features .all-cards {
+    width: 100%;
+  }
+  .s-card-features .all-cards .card {
+    width: 32%;
+  }
 }
 
 @media (max-width: 991px) {
@@ -29,6 +35,25 @@
   }
   .s-hero .text p {
     text-align: center;
+  }
+  .s-card-features .all-cards {
+    flex-direction: column;
+  }
+  .s-card-features .all-cards .card {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .s-card-features .all-cards .card:last-child {
+    margin-bottom: 0;
+  }
+
+  .s-card-features .all-cards .card .info {
+    max-width: 100%;
+    margin-top: 2rem;
   }
 }
 
@@ -61,5 +86,18 @@
 
   .s-hero .image img {
     max-width: 10rem;
+  }
+
+  .s-card-features {
+    padding: 4rem 0;
+  }
+
+  .s-card-features .title p {
+    text-align: center;
+    max-width: 80%;
+  }
+
+  .s-card-features .main-area {
+    padding-bottom: 4rem;
   }
 }
